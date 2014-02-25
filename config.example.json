@@ -1,0 +1,10 @@
+{
+	"imap_server": "imap.example.org",
+	"imap_username": "test@example.org",
+	"imap_password": "password",
+	"imap_port": 993,
+	"use_ssl": true,
+	"folder": "journal",
+	"processing_count": 100,
+	"images_folder": "images/"
+}
