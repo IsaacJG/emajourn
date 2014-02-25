@@ -54,7 +54,7 @@ class DayOneEntry(object):
 
 	def create(self, image_dir):
 		cmd = 'dayone'
-		if self.date: cmd += ' -d=%s' % time.strftime('%m/%d/%Y %I:%M:%S%p', self.date)
+		if self.date: cmd += ' -d=\"%s\"' % time.strftime('%m/%d/%Y %I:%M:%S%p', self.date)
 		if self.image: cmd += ' -p={dirr}{filename}'.format(dirr=image_dir, filename=self.image.get_filename())
 		cmd += ' new'
 		subprocess.check_call('echo \"%s\" | %s' % (self.body, cmd))
