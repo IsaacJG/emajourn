@@ -22,7 +22,8 @@ It is essentially a Python version of [email-to-DayOne](https://github.com/nicat
 	6. folder - the folder to retreive emails from (**Note: emajourn permanently deletes emails after processing, it is recommended to have a dedicated journal folder, not just your inbox**)
 	7. processing_count - the maximum number of emails to process per run
 	8. images_folder - the folder (relative path) to temporarily store images downloaded from emails
-3. Run emajourn: `python3 emajourn.py`
+3. Install DayOne CLI tools, found [here](http://dayoneapp.com/downloads/dayone-cli.pkg)
+4. Run emajourn: `python3 emajourn.py`
 
 It is recommended to use some sort of automation program with this, so that you can automatically run Emajourn every set period of time. One option is to set it to run on login, unless you want the emails to be processed quickly after arrival.
 
